@@ -30,7 +30,7 @@ production:
     database: sharetribe_production
     encoding: utf8
     username: deployer
-    password: <%= ENV['SAFE_DATE_DATABASE_PASSWORD'] %>
+    password: <%= ENV['SHARETRIBE_DATABASE_PASSWORD'] %>
     host: localhost
 
 cucumber:
