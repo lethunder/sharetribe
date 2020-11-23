@@ -35,3 +35,8 @@ amazon:
 #   service: Mirror
 #   primary: local
 #   mirrors: [ amazon, google, microsoft ]
+azure:
+  service: AzureStorage
+  storage_account_name: "flotteur"
+  storage_access_key: "DEDUIWRF0IguSYV1GRe58KUL6lrdk3Tb4MeuNwHCZJBpgjfxXh7HBXNa5uid4U4srx0oC5emnFTlfxCjGSUlNQ=="
+  container: "flotteur"
