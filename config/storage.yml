@@ -9,10 +9,10 @@ local:
 # Use rails credentials:edit to set the AWS secrets (as aws:access_key_id|secret_access_key)
 amazon:
   service: S3
-  access_key_id: <%= APP_CONFIG.aws_access_key_id%>
-  secret_access_key: <%= APP_CONFIG.aws_secret_access_key %>
-  region: <%= APP_CONFIG.s3_region %>
-  bucket: <%= APP_CONFIG.clp_s3_bucket_name %>
+  access_key_id: "AKIA33TEWUU3CRXAQB7A"
+  secret_access_key: "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"
+  region: "eu-west-3"
+  bucket: "flotteur"
   upload:
     acl: "public-read"
     cache_control: 'max-age=3600'
@@ -35,8 +35,3 @@ amazon:
 #   service: Mirror
 #   primary: local
 #   mirrors: [ amazon, google, microsoft ]
-azure:
-  service: AzureStorage
-  storage_account_name: "flotteur"
-  storage_access_key: "DEDUIWRF0IguSYV1GRe58KUL6lrdk3Tb4MeuNwHCZJBpgjfxXh7HBXNa5uid4U4srx0oC5emnFTlfxCjGSUlNQ=="
-  container: "flotteur"
