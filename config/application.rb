@@ -234,6 +234,16 @@ module Kassi
 
     config.active_job.queue_adapter = :delayed_job
 
+      # Email settings
+    config.action_mailer.delivery_method = :smtp
+    config.action_mailer.smtp_settings = {
+        address: 'mail.gandi.net',
+        port: 587,
+        user_name: 'application@safedate.fr',
+        password: 'f%Y!NaBGvk*%4v',
+        authentication: 'plain',
+        enable_starttls_auto: true}
+  
     # TODO remove deprecation warnings when removing legacy analytics
     ActiveSupport::Deprecation.warn("Support for Kissmetrics is deprecated, please use Google Tag Manager instead") if APP_CONFIG.use_kissmetrics.to_s == "true"
     ActiveSupport::Deprecation.warn("Support for Google Analytics is deprecated, please use Google Tag Manager instead") if APP_CONFIG.use_google_analytics.to_s == "true"
